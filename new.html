@@ -8,14 +8,30 @@
   <link href="css/main.min.css" rel="stylesheet">
   <link href="main.css" rel="stylesheet"></head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" aria-label="Offcanvas navbar large">
+  <div class="nav-scroller bg-purple fixed-top pb-5">
+    <nav class="nav" aria-label="Secondary navigation">
+      <a class="nav-link active text-light" aria-current="page" href="#">Dashboard</a>
+      <a class="nav-link text-light" href="#">
+        Friends
+        <span class="badge text-bg-light rounded-pill align-text-bottom">27</span>
+      </a>
+      <a class="nav-link text-light" href="#">Explore</a>
+      <a class="nav-link text-light" href="#">Suggestions</a>
+      <a class="nav-link text-light" href="#">Link</a>
+      <a class="nav-link text-light" href="#">Link</a>
+      <a class="nav-link text-light" href="#">Link</a>
+      <a class="nav-link text-light" href="#">Link</a>
+      <a class="nav-link text-light" href="#">Link</a>
+    </nav>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mt-5  fixed-top" aria-label="Offcanvas navbar large">
     <div class="container-fluid">
-      <div class="d-none d-md-none d-lg-block">
+      <div class="d-none d-xl-block">
         <a class="navbar-brand" href="index.html">
           <img src="images/dabl-header.jpg" alt="Logo"class="d-inline-block align-text-top">
         </a>
       </div>
-      <div class="d-block">
+      <div class="d-block d-xl-none">
         <a class="navbar-brand" href="index.html">
           <img src="images/logo-dabl.jpg" alt="Logo"class="d-inline-block align-text-top">
         </a>
@@ -36,35 +52,28 @@
             <li class="nav-right">
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
-            <li class="nav-right">
-              <a class="nav-link" href="products.html"href="#">Products</a>
-            </li>
+
             <li class="nav-right dropdown">
               <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">About</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">About</a></li>
+                <li><a class="dropdown-item" href="about.html">About</a></li>
                 <li><a class="dropdown-item" href="#">Contact</a></li>
                 <li><a class="dropdown-item" href="customers.html">dabl customers</a></li>
               </ul>
             </li>
             <li class="nav-right">
-              <a class="nav-link" href="#">Healthcare</a>
+              <a class="nav-link" href="clinicaltrials.html"href="#">Clinical Trials</a>
             </li>
             <li class="nav-right">
-              <a class="nav-link" href="#">Education</a>
-            </li>
-            <li class="nav-right">
-              <a class="nav-link" href="#">News</a>
+              <a class="nav-link" href="healthcare.html">Healthcare</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
   </nav>
-  <video class="w-" autoplay loop muted>
-    <source src="images/scoop.mp4" type="video/mp4" />
-  </video> 
-
+  <div class="py-5"></div>
+  <div class="py-5"></div>
  <main class="container">
   <div class="row">
     <div class="py-4 col-xl-3">
@@ -83,10 +92,8 @@
           <p class="fs-5">Our online healthcare software systems offer solutions in the following medical disciplines:</p>
           <ul>
             <li><a class="text-primary mb-1 fs-5"href="#">ABPM - 24 hour blood pressure</a></li>
-            <li><a class="text-primary mb-1 fs-5"href="#">Clinical trials - Centralised ABPM & HBPM system</a></li>
-            <li><a class="text-primary mb-1 fs-5"href="#">Cardiovascular</a></li>
-            <li><a class="text-primary mb-1 fs-5"href="#">Geriatric</a></li>
-            <li><a class="text-primary mb-1 fs-5"href="#">Shared integrated Systems</a></li>
+            <li><a class="text-primary mb-1 fs-5"href="#">Clinical trials - Centralised ABPM & OBPM system</a></li>
+
           </ul>
           <p class="fs-5">View some <a class="fs-5" href="#">Customer Testimonials</a></p>
         </div>
@@ -99,9 +106,9 @@
             <p class="col-md- fs-4">dabl develops online cardiovascular disease management systems in collaboration with a number of international centres of excellence.
                These expert systems aid the PREVENTION and MANAGEMENT of high blood pressure, stroke, heart-attack and a range of other cardiovascular conditions. 
               dabl also provides a complete package for the implementation, collection and analysis
-               of ABPM and HBPM clinical study data which can be tailored to suit the study protocol. </p>
+               of ABPM and OBPM clinical study data which can be tailored to suit the study protocol. </p>
             <p class="col-md- fs-4">dabl also provides a complete package for the implementation,
-            collection and analysis of ABPM and HBPM clinical study data which can be tailored to suit the study protocol. </p>
+            collection and analysis of ABPM and OBPM clinical study data which can be tailored to suit the study protocol. </p>
           </div>
       </div>
   
@@ -122,8 +129,8 @@
             <p class="mb-0">"I am very happy with the service due to its simplicity and efficiency.  Thanks to dabl ABPM Pharmacy AFAM Pharmacies have been successful in improving the quality of our 24-hr ABPM service.  Now, the whole procedure is done very quickly and smoothly.”
               Giulio Severi, Managing Director, AFAM, Italy</p>
           </blockquote>
-          <p class="fs-4 pt-1 text-primary">dabl centralised ABPM and HBPM services for multi-centre clinical trials</p>
-          <p class="col-md- fs-4">Ambulatory Blood Pressure Monitoring (ABPM) and Home Blood Pressure Monitoring (HBPM)
+          <p class="fs-4 pt-1 text-primary">dabl centralised ABPM and OBPM services for multi-centre clinical trials</p>
+          <p class="col-md- fs-4">Ambulatory Blood Pressure Monitoring (ABPM) and Home Blood Pressure Monitoring (OBPM)
           are now increasingly used both to test anti-hypertensive drug efficacy in clinical trials and also as a cardiac safety biomarker.
           dabl centrally hosted systems lower data collection costs by providing faster, more efficient
           collection and processing of information. <a href="">dabl Research</a> (dedicated website)</p>
@@ -135,6 +142,11 @@
     </div>
   </div>
 
+<h5 class="display-4 text-center text-primary">Watch Our Video</h5>
+<div class="text-center embed-responsive embed-responsive-16by9">
+  <video class="w-100" src="images/video2.mp4"controls></video> 
+
+</div>
 
 </main>
 <div class="bg-light">
